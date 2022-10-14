@@ -9,7 +9,10 @@ function App() {
   const changeDate = (e) => setDateState(e);
   return (
     <div className="App">
+      <div className='container'>
   <Calendar value={dateState} onChange={changeDate}/>
+  <p>Current selected date is <b>{moment(dateState).format('MMMM Do YYYY')}</b></p>
+</div>
    <h1>Calendar</h1>
     </div>
   );
